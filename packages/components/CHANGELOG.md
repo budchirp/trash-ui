@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/budchirp/trash-ui/compare/components-v1.0.0...components-v1.1.0) (2025-08-23)
+
+
+### Features
+
+* center component ([9421c01](https://github.com/budchirp/trash-ui/commit/9421c017519ed24845b896120c2c65d7f8853f71))
+* grid component ([f2ef4e2](https://github.com/budchirp/trash-ui/commit/f2ef4e26955c5216707caa97deef472ebbcbf5f2))
+
 # 1.0.0 (2025-08-23)
 
 
