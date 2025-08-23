@@ -9,10 +9,11 @@ export const Heading: React.FC<HeadingProps> = ({
   children,
   className,
   size,
+  color,
   ...props
 }: HeadingProps): React.ReactNode => {
   return (
-    <h1 {...props} className={cn(headingStyle({ className, size }))}>
+    <h1 {...props} className={cn(headingStyle({ className, size, color }))}>
       {children}
     </h1>
   )

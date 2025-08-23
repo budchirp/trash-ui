@@ -10,7 +10,7 @@ export const Text: React.FC<TextProps> = ({
   ...props
 }: TextProps): React.ReactNode => {
   return (
-    <p {...props} className={cn(className)}>
+    <p {...props} className={cn('break-words', className)}>
       {children}
     </p>
   )

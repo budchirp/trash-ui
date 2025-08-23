@@ -10,7 +10,13 @@ export const Container: React.FC<ContainerProps> = ({
   ...props
 }: ContainerProps): React.ReactNode => {
   return (
-    <div {...props} className={cn('max-w-screen-lg mx-auto w-11/12 px-2', className)}>
+    <div
+      {...props}
+      className={cn(
+        'md:max-w-(--breakpoint-md) lg:px-8 lg:max-w-(--breakpoint-lg) mx-auto w-11/12 px-2',
+        className
+      )}
+    >
       {children}
     </div>
   )

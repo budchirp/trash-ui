@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority'
 
-export const boxStyle = cva('w-full border border-outline rounded-3xl', {
+export const boxStyle = cva('w-full border relative overflow-hidden border-outline rounded-3xl', {
   variants: {
     color: {
       primary: 'bg-surface-primary text-primary',

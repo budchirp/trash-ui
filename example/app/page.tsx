@@ -23,7 +23,7 @@ const Page: React.FC = (): React.ReactNode => {
   const [checked, setChecked] = useState(false)
 
   return (
-    <Column>
+    <Column className='gap-8'>
       <Container>
         <Section title='Section' description='Description'>
           <Box>

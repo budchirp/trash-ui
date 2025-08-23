@@ -13,19 +13,39 @@ export const Section: React.FC<SectionProps> = ({
   className,
   title,
   description,
-  divider = true,
+  subsection = false,
+  divider = !subsection,
   ...props
 }: SectionProps): React.ReactNode => {
   return (
-    <Column {...props} padding='none' className={cn('gap-2', className)}>
-      <div>
-        {typeof title === 'string' ? <Heading>{title}</Heading> : title}
-        {typeof description === 'string' ? <Heading size='h4'>{description}</Heading> : description}
-      </div>
+    <Column
+      {...props}
+      padding='none'
+      className={cn('gap-0', !subsection ? 'mt-12' : '', className)}
+    >
+      <Column padding='none' className='mb-2 gap-2'>
+        {typeof title === 'string' ? (
+          <Heading size={subsection ? 'h3' : 'h1'}>{title}</Heading>
+        ) : (
+          title
+        )}
 
-      {divider && <Divider className='mb-2' />}
+        {description && (
+          <div>
+            {typeof description === 'string' ? (
+              <Heading size='h4'>{description}</Heading>
+            ) : (
+              description
+            )}
+          </div>
+        )}
+      </Column>
 
-      <Column padding='none'>{children}</Column>
+      {divider && <Divider className='mb-2 h-1' />}
+
+      <Column className={!subsection ? 'mt-2' : ''} padding='none'>
+        {children}
+      </Column>
     </Column>
   )
 }

@@ -5,4 +5,5 @@ export type SectionProps = {
   title?: React.ReactNode | string
   description?: React.ReactNode | string
   divider?: boolean
+  subsection?: boolean
 } & ComponentProps<'div'>
