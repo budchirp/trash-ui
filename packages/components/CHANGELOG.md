@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/budchirp/trash-ui/compare/components-v1.1.1...components-v1.1.2) (2025-08-23)
+
+
+### Bug Fixes
+
+* omit title prop ([84cac4f](https://github.com/budchirp/trash-ui/commit/84cac4fee41644772552e2e93d2e79954ccfd1bf))
+
 ## [1.1.1](https://github.com/budchirp/trash-ui/compare/components-v1.1.0...components-v1.1.1) (2025-08-23)
 
 
