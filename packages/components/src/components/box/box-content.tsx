@@ -1,0 +1,21 @@
+import type React from 'react'
+
+import { cn } from '@/utils/cn'
+
+import { boxContentStyle } from '@/components/box/box-content.style'
+
+import type { BoxContentProps } from '@/components/box/types'
+import { Column } from '../column'
+
+export const BoxContent: React.FC<BoxContentProps> = ({
+  children,
+  className,
+  padding,
+  ...props
+}: BoxContentProps): React.ReactNode => {
+  return (
+    <Column {...props} padding='none' className={cn(boxContentStyle({ className, padding }))}>
+      {children}
+    </Column>
+  )
+}

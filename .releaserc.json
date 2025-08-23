@@ -1,0 +1,34 @@
+{
+  "branches": ["main"],
+  "tagFormat": "components-v${version}",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "packages/components/CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "pnpm --filter @trash-ui/components build"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "packages/components"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["packages/components/package.json", "packages/components/CHANGELOG.md"],
+        "message": "chore(release): components v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "@semantic-release/github"
+  ]
+}
