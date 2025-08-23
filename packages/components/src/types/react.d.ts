@@ -1,1 +1,1 @@
-type Children = any
+type Children = React.ReactNode

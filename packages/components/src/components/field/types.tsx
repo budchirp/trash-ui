@@ -1,7 +1,6 @@
 import type { ComponentProps } from 'react'
 
-export type FieldProps = {
+export type FieldProps = ComponentProps<'div'> & {
   label?: Children | string
   type?: 'column' | 'row'
-  children?: Children
-} & ComponentProps<'div'>
+}

@@ -1,5 +1,5 @@
 import type { ComponentProps } from 'react'
 
-export type GridProps = {
+export type GridProps = ComponentProps<'div'> & {
   children?: Children
-} & ComponentProps<'div'>
+}

@@ -1,9 +1,9 @@
 import type { ComponentProps } from 'react'
 
-export type InputProps = {
+export type InputProps = ComponentProps<'input'> & {
   icons?: {
     leading?: Children
     trailing?: Children
   }
   textarea?: boolean
-} & ComponentProps<'input'>
+}

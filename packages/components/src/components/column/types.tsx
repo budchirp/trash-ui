@@ -4,8 +4,8 @@ import type { VariantProps } from 'class-variance-authority'
 
 import type { columnStyle } from '@/components/column/column.style'
 
-export type RawColumnProps = {
+export type RawColumnProps = ComponentProps<'div'> & {
   children?: Children
-} & ComponentProps<'div'>
+}
 
-export type ColumnProps = RawColumnProps & VariantProps<typeof columnStyle>
+export type ColumnProps = VariantProps<typeof columnStyle> & RawColumnProps
