@@ -1,7 +1,7 @@
 import type { ComponentProps } from 'react'
 
 export type FieldProps = {
-  label?: React.ReactNode | string
+  label?: Children | string
   type?: 'column' | 'row'
-  children?: React.ReactNode
+  children?: Children
 } & ComponentProps<'div'>

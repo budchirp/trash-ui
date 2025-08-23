@@ -2,8 +2,8 @@ import type { ComponentProps } from 'react'
 
 export type InputProps = {
   icons?: {
-    leading?: React.ReactNode
-    trailing?: React.ReactNode
+    leading?: Children
+    trailing?: Children
   }
   textarea?: boolean
 } & ComponentProps<'input'>

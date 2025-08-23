@@ -11,7 +11,7 @@ export const Button: React.FC<ButtonProps> = ({
   shape,
   color,
   ...props
-}: ButtonProps): React.ReactNode => {
+}: ButtonProps): Children => {
   return (
     <button {...props} className={cn(buttonStyle({ className, shape, color }))}>
       {children}

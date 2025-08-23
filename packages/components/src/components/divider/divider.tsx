@@ -8,7 +8,7 @@ export const Divider: React.FC<DividerProps> = ({
   className,
   orientation = 'horizontal',
   ...props
-}: DividerProps): React.ReactNode => {
+}: DividerProps): Children => {
   return (
     <div
       {...props}

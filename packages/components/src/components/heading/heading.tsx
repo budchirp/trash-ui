@@ -11,7 +11,7 @@ export const Heading: React.FC<HeadingProps> = ({
   size,
   color,
   ...props
-}: HeadingProps): React.ReactNode => {
+}: HeadingProps): Children => {
   return (
     <h1 {...props} className={cn(headingStyle({ className, size, color }))}>
       {children}

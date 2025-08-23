@@ -15,7 +15,7 @@ export const Input: React.FC<InputProps> = ({
   textarea,
   onKeyDown,
   ...props
-}: InputProps): React.ReactNode => {
+}: InputProps): Children => {
   const Component: 'input' = textarea ? 'textarea' : ('input' as any)
 
   const textareaRef = useRef<HTMLTextAreaElement>(null)

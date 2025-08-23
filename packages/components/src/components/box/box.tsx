@@ -11,7 +11,7 @@ export const Box: React.FC<BoxProps> = ({
   color,
   blur,
   ...props
-}: BoxProps): React.ReactNode => {
+}: BoxProps): Children => {
   return (
     <div {...props} className={cn(boxStyle({ className, color, blur }))}>
       {children}

@@ -12,7 +12,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
   checked = false,
   onChange = () => {},
   ...props
-}: CheckboxProps): React.ReactNode => {
+}: CheckboxProps): Children => {
   return (
     <HeadlessCheckbox
       {...props}

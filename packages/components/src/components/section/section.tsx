@@ -16,7 +16,7 @@ export const Section: React.FC<SectionProps> = ({
   subsection = false,
   divider = !subsection,
   ...props
-}: SectionProps): React.ReactNode => {
+}: SectionProps): Children => {
   return (
     <Column
       {...props}

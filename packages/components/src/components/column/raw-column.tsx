@@ -8,7 +8,7 @@ export const RawColumn: React.FC<RawColumnProps> = ({
   children,
   className,
   ...props
-}: RawColumnProps): React.ReactNode => {
+}: RawColumnProps): Children => {
   return (
     <div {...props} className={cn('flex flex-col', className)}>
       {children}

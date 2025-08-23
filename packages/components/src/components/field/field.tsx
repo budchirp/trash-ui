@@ -13,7 +13,7 @@ export const Field: React.FC<FieldProps> = ({
   label,
   id,
   ...props
-}: FieldProps): React.ReactNode => {
+}: FieldProps): Children => {
   return (
     <div
       {...props}

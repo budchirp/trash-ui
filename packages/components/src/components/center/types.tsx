@@ -1,5 +1,5 @@
 import type { ComponentProps } from 'react'
 
 export type CenterProps = {
-  children?: React.ReactNode
+  children?: Children
 } & ComponentProps<'div'>

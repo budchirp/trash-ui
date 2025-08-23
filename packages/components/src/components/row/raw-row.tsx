@@ -8,7 +8,7 @@ export const RawRow: React.FC<RowProps> = ({
   children,
   className,
   ...props
-}: RowProps): React.ReactNode => {
+}: RowProps): Children => {
   return (
     <div {...props} className={cn('flex items-center', className)}>
       {children}

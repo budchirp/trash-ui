@@ -11,7 +11,7 @@ export const Column: React.FC<ColumnProps> = ({
   className,
   padding,
   ...props
-}: ColumnProps): React.ReactNode => {
+}: ColumnProps): Children => {
   return (
     <div {...props} className={cn(columnStyle({ className, padding }))}>
       {children}

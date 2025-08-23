@@ -9,7 +9,7 @@ export const Label: React.FC<LabelProps> = ({
   className,
   id,
   ...props
-}: LabelProps): React.ReactNode => {
+}: LabelProps): Children => {
   return (
     <label {...props} htmlFor={id} className={cn('text-sm font-medium', className)}>
       {children}
