@@ -23,7 +23,7 @@ export const Section: React.FC<SectionProps> = ({
       padding='none'
       className={cn('gap-0', !subsection ? 'mt-12' : '', className)}
     >
-      <Column padding='none' className='mb-2 gap-2'>
+      <Column className='mb-2 gap-2'>
         {typeof title === 'string' ? (
           <Heading size={subsection ? 'h3' : 'h1'}>{title}</Heading>
         ) : (

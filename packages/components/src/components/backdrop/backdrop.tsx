@@ -1,7 +1,7 @@
 import type React from 'react'
 
 import { Transition } from '@headlessui/react'
-import { cn } from '@trash-ui/components'
+import { cn } from '@/utils/cn'
 
 import type { BackdropProps } from '@/components/backdrop/types'
 
