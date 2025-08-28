@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/budchirp/trash-ui/compare/components-v1.1.2...components-v1.2.0) (2025-08-28)
+
+
+### Features
+
+* add backdrop component and enhance column and divider styles ([534120c](https://github.com/budchirp/trash-ui/commit/534120ce43bdbe58fc90168705070cbcbccea6bf))
+
 ## [1.1.2](https://github.com/budchirp/trash-ui/compare/components-v1.1.1...components-v1.1.2) (2025-08-23)
 
 
