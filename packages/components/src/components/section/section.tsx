@@ -41,7 +41,7 @@ export const Section: React.FC<SectionProps> = ({
         )}
       </Column>
 
-      {divider && <Divider className='mb-2 h-1' />}
+      {divider && <Divider thickness='thick' className='mb-2' />}
 
       <Column className={!subsection ? 'mt-2' : ''} padding='none'>
         {children}

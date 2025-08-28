@@ -1,22 +1,15 @@
 import type React from 'react'
 
+import { dividerStyle } from '@/components/divider/divider.style'
 import { cn } from '@/utils/cn'
 
 import type { DividerProps } from '@/components/divider/types'
 
 export const Divider: React.FC<DividerProps> = ({
   className,
-  orientation = 'horizontal',
+  orientation,
+  thickness,
   ...props
 }: DividerProps): Children => {
-  return (
-    <div
-      {...props}
-      className={cn(
-        'bg-outline rounded-full',
-        orientation === 'horizontal' ? 'h-[0.5px] w-full px-4' : 'h-full w-[0.5px]',
-        className
-      )}
-    />
-  )
+  return <div {...props} className={cn(dividerStyle({ orientation, thickness, className }))} />
 }
