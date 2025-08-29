@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/budchirp/trash-ui/compare/components-v1.3.1...components-v1.3.2) (2025-08-29)
+
+
+### Bug Fixes
+
+* reduce gap in field component ([da6371f](https://github.com/budchirp/trash-ui/commit/da6371fcbedc367bb47a66d6739f6fe9ba197472))
+
 ## [1.3.1](https://github.com/budchirp/trash-ui/compare/components-v1.3.0...components-v1.3.1) (2025-08-29)
 
 
