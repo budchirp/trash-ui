@@ -21,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={loading || disabled}
       className={cn(buttonStyle({ className, shape, color }))}
     >
-      {loading && <LoaderCircle className={cn('size-8 animate-spin', children && 'mr-2')} />}
+      {loading && <LoaderCircle className={cn('size-4 animate-spin', children && 'mr-2')} />}
 
       {children}
     </button>
