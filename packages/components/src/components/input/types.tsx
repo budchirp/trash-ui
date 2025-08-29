@@ -5,5 +5,4 @@ export type InputProps = ComponentProps<'input'> & {
     leading?: Children
     trailing?: Children
   }
-  textarea?: boolean
 }
