@@ -11,7 +11,7 @@ export const Label: React.FC<LabelProps> = ({
   ...props
 }: LabelProps): Children => {
   return (
-    <label {...props} htmlFor={id} className={cn('text-sm font-medium', className)}>
+    <label {...props} htmlFor={id} className={cn('text-sm font-semibold text-primary', className)}>
       {children}
     </label>
   )

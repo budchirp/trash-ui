@@ -19,7 +19,7 @@ export const Field: React.FC<FieldProps> = ({
     <Column className='gap-0'>
       <Column
         {...props}
-        className={cn('gap-2', type === 'column' ? 'flex-col' : 'flex-row items-center', className)}
+        className={cn('gap-1', type === 'column' ? 'flex-col' : 'flex-row items-center', className)}
       >
         {type === 'column' && (
           <>
