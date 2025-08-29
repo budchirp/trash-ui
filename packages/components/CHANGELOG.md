@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/budchirp/trash-ui/compare/components-v1.2.0...components-v1.3.0) (2025-08-29)
+
+
+### Features
+
+* enhance Field component with error handling and refactor structure ([8bae0a9](https://github.com/budchirp/trash-ui/commit/8bae0a9e81ec93109e4cec46b64b17cdd7e0cf53))
+
 # [1.2.0](https://github.com/budchirp/trash-ui/compare/components-v1.1.2...components-v1.2.0) (2025-08-28)
 
 
