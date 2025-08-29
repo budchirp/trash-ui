@@ -16,14 +16,10 @@ export const Field: React.FC<FieldProps> = ({
   ...props
 }: FieldProps): Children => {
   return (
-    <Column className='gap-2'>
-      <div
+    <Column className='gap-0'>
+      <Column
         {...props}
-        className={cn(
-          'flex gap-2 w-full',
-          type === 'column' ? 'flex-col' : 'flex-row items-center',
-          className
-        )}
+        className={cn('gap-2', type === 'column' ? 'flex-col' : 'flex-row items-center', className)}
       >
         {type === 'column' && (
           <>
@@ -40,7 +36,7 @@ export const Field: React.FC<FieldProps> = ({
             {typeof label === 'string' ? <Label id={id}>{label}</Label> : label}
           </>
         )}
-      </div>
+      </Column>
 
       {error && <div className='text-red-500'>{error}</div>}
     </Column>
